@@ -1,0 +1,10 @@
+<!--
+        {% header = 1}
+        {% if header %}
+            {block header}
+            {endblock}
+        {% else %}
+            {% block footer %}
+            {endblock}
+        {% end if %}
+    -->
