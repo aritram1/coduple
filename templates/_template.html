@@ -1,24 +1,72 @@
-{% extends "_reusables.html" %}
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+        <!-------------------------------------TITLE------------------------------------------------>
         <title>Home Page</title>
-        <!-- header block goes here -->
-        {% block header %}HEADsER{% endblock %}
+
+        <!-------------------------------------HEADER----------------------------------------------->
+        {% block header %}
+            <div class = "navigation fixed-top">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Coduple</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Home2</a></li>
+                    <li><a href="#">Home3</a></li>
+                    <li><a href="#">Home4</a></li>
+                  </ul>
+                  <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </div>
+        {% endblock %}
+        <!-------------------------------------HEADER----------------------------------------------->
     </head>
 
     <body>
-        This is the home page !!
-        <!-- content block goes here -->
-        <!--{% block content %}{% endblock %}-->
+
+        <!-------------------------------------CONTENT---------------------------------------------->
+        <span>{% block content %}{% endblock %}</span>
+        <!-------------------------------------CONTENT---------------------------------------------->
+
+        <!-----------------------------------RIGHT SIDE BAR----------------------------------------->
+        <span>{% block sidebarright %}{% endblock %}</span>
+        <!-----------------------------------RIGHT SIDE BAR----------------------------------------->
+
     </body>
 
     <div>
-        <!-- footer block goes here -->
-        {% block footer %}FOO2TER{% endblock %}
+        <!-------------------------------------FOOTER----------------------------------------------->
+        {% block footer %}
+         <div>
+             <footer class="footer">
+                 <div class="container">
+                    <span class="text-muted">Copyright © 2018 upup eejrehkum</span>
+                </div>
+            </footer>
+         </div>
+        {% endblock %}
+        <!-------------------------------------FOOTER----------------------------------------------->
     </div>
 
 </html>
