@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+        <link rel="stylesheet" type="text/css" href="/static/mycss.css">
+        <title>
+            {% block title %}Template Page{% endblock %}
+        </title>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- header -->
+            <div class="header">
+                <div class="brand">
+                    Coduple
+                </div>
+                <span class="left">
+                    <a href="#"><img src="/static/img/home.png"></a>
+                    <a href="#"><img src="/static/img/home.png"></a>
+                    <a href="#"><img src="/static/img/home.png"></a>
+                </span>
+
+                <span class="right">
+                    <input type="text">
+                    <span><img src="/static/img/search.png"></span>
+                </span>
+
+            </div>
+            <!-- header -->
+
+            <!-- content -->
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+            <!-- content -->
+
+            <!-- Sidebar right -->
+            <div class="sidebarright">
+                {% block sidebarright %}{% endblock %}
+            </div>
+            <!-- Sidebar right -->
+
+            <!-- Footer -->
+            <div class = "footer">
+                <span class = "social">
+                    <a href="#"><img src="/static/img/social/facebook.svg"></a>
+                    <a href="#"><img src="/static/img/social/whatsapp.svg"></a>
+                    <a href="#"><img src="/static/img/social/instagram.svg"></a>
+                    <a href="#"><img src="/static/img/social/youtube.svg"></a>
+                </span>
+                <div class="copyright"><i>Copyright © 2018 upup eejrehkum</i></div>
+            </div>
+            <!-- Footer -->
+
+        </div>
+
+    </body>
+
+
+</html>

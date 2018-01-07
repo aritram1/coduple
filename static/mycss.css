@@ -1,0 +1,91 @@
+h1{
+    margin: 10px;
+}
+div{
+    border-radius: 5px;
+}
+.grid-container {
+  display: grid;
+  background-image:  url("/static/img/background.jpg");
+  grid-template-areas:
+    'header header header'
+    'content content sidebarright'
+    'footer footer footer';
+  grid-gap: 5px;
+  padding: 5px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+}
+.header {
+    grid-area: header;
+}
+.header > .brand{
+    background-color: magenta;
+    display: flex;
+    height: 100px;
+    font-size: 50px;
+}
+.header > .left{
+
+}
+.header > .left > a > img{
+    height: 30px;
+    width:  30px;
+    padding: 10px
+}
+.header > .right{
+    height: 30px;
+    width:  30px;
+    padding: 10px
+}
+.header > .right > span > img{
+    height: 30px;
+    width:  30px;
+    padding: 5px
+}
+.content {
+    grid-area: content;
+}
+.sidebarright {
+    grid-area: sidebarright;
+}
+.right_side_element{
+    background-color : cyan;
+}
+.right_side_element > img{
+    margin: 3px;
+    height: 30px;
+    width:  30px;
+}
+.content_element {
+    background-color : magenta;
+}
+.content_element > span > img{
+    margin: 0px;
+    height: 30px;
+    width:  30px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 10px;
+}
+.footer > .social > a > img{
+    height: 30px;
+    width:  30px;
+    padding: 10px
+}
+.footer > .copyright{
+    font-size: 12px;
+}
+
+/*
+div{
+    background-color: black;
+}*/

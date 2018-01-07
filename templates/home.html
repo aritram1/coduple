@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Main Content</h1>
+<div>
+    {% for i in range(10) %}
+        <div class="content_element">
+            <span><img src="/static/img/social/facebook.svg"><span>
+            <span>The pic count is {{ i }}<span>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block sidebarright %}
+<h1>Right Content</h1>
+<div>
+    {% for i in range(3) %}
+        <div class="right_side_element">
+            <div>Element : element is {{ i }} </div>
+            <div>Element : square is {{ i*i }} </div>
+            <div>Element : cube is {{ i*i*i }} </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
